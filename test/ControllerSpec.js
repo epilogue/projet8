@@ -59,12 +59,20 @@ describe('controller', function () {
 	});
 
 	it('should show entries on start-up', function () {
-		// TODO: write test
+		/*test qui doit montrer les todos à l'initialisation de l'application donc liste todos vide  */
+                       
+			setUpModel([]);
+
+			subject.setView('');
+
+			expect(view.render).toHaveBeenCalledWith('showEntries', []);
 	});
 
 	describe('routing', function () {
+        /* test sur les routes */
 
 		it('should show all entries without a route', function () {
+                    /*affiche toute les taches sans route */
 			var todo = {title: 'my todo'};
 			setUpModel([todo]);
 
@@ -74,6 +82,7 @@ describe('controller', function () {
 		});
 
 		it('should show all entries without "all" route', function () {
+                    /*affiche toutes les taches sans la route all*/
 			var todo = {title: 'my todo'};
 			setUpModel([todo]);
 
@@ -83,15 +92,28 @@ describe('controller', function () {
 		});
 
 		it('should show active entries', function () {
-			// TODO: write test
+                    /*affiche  toutes les taches actives  donc pas completed*/
+			var todo = {title: 'my todo',completed:false};
+			setUpModel([todo]);
+
+			subject.setView('#/active');
+
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
 		});
 
 		it('should show completed entries', function () {
-			// TODO: write test
+                    /*affiche toutes les taches completed*/
+			var todo = {title: 'my todo',completed :true};
+			setUpModel([todo]);
+
+			subject.setView('#/completed');
+
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
 		});
 	});
 
 	it('should show the content block when todos exists', function () {
+            /*affiche le block quand il existe des taches*/
 		setUpModel([{title: 'my todo', completed: true}]);
 
 		subject.setView('');
@@ -102,6 +124,7 @@ describe('controller', function () {
 	});
 
 	it('should hide the content block when no todos exists', function () {
+            /*cache le block si aucune tache*/
 		setUpModel([]);
 
 		subject.setView('');
@@ -112,6 +135,7 @@ describe('controller', function () {
 	});
 
 	it('should check the toggle all button, if all todos are completed', function () {
+            /*active le bouton toggle-all si toutes les taches sont completed*/
 		setUpModel([{title: 'my todo', completed: true}]);
 
 		subject.setView('');
@@ -122,6 +146,7 @@ describe('controller', function () {
 	});
 
 	it('should set the "clear completed" button', function () {
+            /*affiche le bouton clear completed si la tache est completed*/
 		var todo = {id: 42, title: 'my todo', completed: true};
 		setUpModel([todo]);
 
@@ -134,29 +159,68 @@ describe('controller', function () {
 	});
 
 	it('should highlight "All" filter by default', function () {
-		// TODO: write test
+            /*teste si le bouton all est activé par défaut */
+		setUpModel([]);
+
+		subject.setView('');
+
+		expect(view.render).toHaveBeenCalledWith('setFilter', '');
 	});
 
 	it('should highlight "Active" filter when switching to active view', function () {
-		// TODO: write test
+		/*teste si le bouton active est activé quand  on est sur la vue active */ 
+                setUpModel([]);
+
+		subject.setView('#/active');
+
+		expect(view.render).toHaveBeenCalledWith('setFilter', 'active');
 	});
 
 	describe('toggle all', function () {
 		it('should toggle all todos to completed', function () {
-			// TODO: write test
+                  /*  affiche toutes les taches à completed*/
+			var todo = {id: 20, title: 'my todo', completed: false};
+			setUpModel([todo]);
+
+			subject.setView('');
+
+			var parameter = {completed: true };
+			view.trigger('toggleAll', parameter);
+
+			expect(model.update).toHaveBeenCalledWith(20, {completed: true},jasmine.any(Function));
 		});
 
 		it('should update the view', function () {
-			// TODO: write test
+                    /*met à jour la vue */
+			var todos = [{id: 21, title: 'todo', completed: false},
+						{id: 42, title: 'another todo', completed: false}
+						]
+			setUpModel([todos]);
+
+			subject.setView('');
+
+			view.trigger('toggleAll', {completed: false});
+
+			expect(view.render).toHaveBeenCalledWith('updateElementCount', 1);
 		});
 	});
 
 	describe('new todo', function () {
+            /*ici on pourrait rajouter la verification de l'unicité de l'id*/
+            /*creation d'une tache*/
 		it('should add a new todo to the model', function () {
-			// TODO: write test
+                    /*ajout d'une tache dans le modèle*/
+			setUpModel([]);
+
+			subject.setView('');
+
+			view.trigger('newTodo', 'a new todo');
+
+			expect(model.create).toHaveBeenCalledWith('a new todo', jasmine.any(Function));
 		});
 
 		it('should add a new todo to the view', function () {
+                    /*ajoute la nouvelle tache à la vue*/
 			setUpModel([]);
 
 			subject.setView('');
@@ -181,6 +245,7 @@ describe('controller', function () {
 		});
 
 		it('should clear the input field when a new todo is added', function () {
+                    /*remet l'input vide quand la tache est créée*/
 			setUpModel([]);
 
 			subject.setView('');
@@ -193,10 +258,19 @@ describe('controller', function () {
 
 	describe('element removal', function () {
 		it('should remove an entry from the model', function () {
-			// TODO: write test
+                    /*teste la suppression d(une entrée du modèle*/
+			var todo = {id: 42, title: 'my todo', completed: true};
+			setUpModel([todo]);
+
+			subject.setView('');
+
+			view.trigger('itemRemove', {id: 42});
+
+			expect(model.remove).toHaveBeenCalledWith(42, jasmine.any(Function));
 		});
 
 		it('should remove an entry from the view', function () {
+                     /*teste la suppression d(une entrée de la vue*/
 			var todo = {id: 42, title: 'my todo', completed: true};
 			setUpModel([todo]);
 
@@ -207,6 +281,7 @@ describe('controller', function () {
 		});
 
 		it('should update the element count', function () {
+                    /*teste la mise à jour du nombre d'éléments*/
 			var todo = {id: 42, title: 'my todo', completed: true};
 			setUpModel([todo]);
 
