@@ -220,7 +220,7 @@ describe('controller', function () {
 		});
 
 		it('should add a new todo to the view', function () {
-                    /*ajoute la nouvelle tache à la vue*/
+                    /*ajoute une nouvelle tache à la vue*/
 			setUpModel([]);
 
 			subject.setView('');
