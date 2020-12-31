@@ -83,17 +83,23 @@
             // Generate an ID
                 var newId = ""; 
                 var charset = "0123456789";
-                // Checking for unique IDs
+                
+                // HB_19_12_2020 instanciation de la variable uniqueId à false
+                
                 var uniqueId = false;
-
+                //  HB_19_12_2020 boucle tant que uniqueId est égal à false  
                 while(!uniqueId){
                     for (var i = 0; i < 6; i++) {
                         newId += charset.charAt(Math.floor(Math.random() * charset.length));
                     }
+                // HB_19_12_2020 condition de sortie du while 
                     uniqueId = true;
-                //Looping to compare all the todo id's with the newly generated id 
+                    
+                // HB_19_12_2020 boucle pour comparer l'Id généré aux Id déjà présents
                     for (var i = 0; i < todos.length; i++) {
+                // HB_19_12_2020 si l'Id existe déjà  alors on relance la génération d'un Id         
                         if (todos[i].id === newId) {
+                // HB_19_12_2020  si newId identique à Id existant on repasse uniqueId à false pour refaire un tour de while 
                             uniqueId = false;
                         }
                     }
@@ -134,7 +140,7 @@
 		var data = JSON.parse(localStorage[this._dbName]);
 		var todos = data.todos;
 		var todoId;
-		
+	// HB_19_12_2020 suppression d'une des boucles for  qui était identique à la première	
 		for (var i = 0; i < todos.length; i++) {
 			if (todos[i].id == id) {
 				todoId = todos[i].id;                            
