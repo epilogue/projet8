@@ -121,15 +121,16 @@
 	 */
 	Controller.prototype.editItemSave = function (id, title) {
 		var self = this;
-
-		while (title[0] === " ") {
-			title = title.slice(1);
-		}
-
-		while (title[title.length-1] === " ") {
-			title = title.slice(0, -1);
-		}
-
+                /** HB_19_12_2020 remplacement des deux boucles whiles  par une regex*/
+                title = title.replace(/^\s*/, '').replace(/\s*$/, '');
+//		while (title[0] === " ") {
+//			title = title.slice(1);
+//		}
+//
+//		while (title[title.length-1] === " ") {
+//			title = title.slice(0, -1);
+//		}
+                
 		if (title.length !== 0) {
 			self.model.update(id, {title: title}, function () {
 				self.view.render('editItemDone', {id: id, title: title});
@@ -162,13 +163,13 @@
 		self.model.read(function(data) {
 			items = data;
 		});
-/** HB 19_12_2020  console.log qui traine 
-*		items.forEach(function(item) {
-*			if (item.id === id) {
-*				console.log("Element with ID: " + id + " has been removed.");
-*			}
-*		});
-*/
+                /** HB 19_12_2020  console.log qui traine 
+                *		items.forEach(function(item) {
+                *			if (item.id === id) {
+                *				console.log("Element with ID: " + id + " has been removed.");
+                *			}
+                *		});
+                */
 		self.model.remove(id, function () {
 			self.view.render('removeItem', id);
 		});

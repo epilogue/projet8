@@ -83,7 +83,7 @@
             // Generate an ID
                 var newId = ""; 
                 var charset = "0123456789";
-                
+                /** HB_19_12_2020 modification code  pour unicité de l'Id */
                 // HB_19_12_2020 instanciation de la variable uniqueId à false
                 
                 var uniqueId = false;
