@@ -1,3 +1,7 @@
+
+/**
+ * Controller
+ */
 (function (window) {
 	'use strict';
 

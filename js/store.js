@@ -1,4 +1,9 @@
 /*jshint eqeqeq:false */
+
+/**
+ * manages storage within the local system Browser Storage
+ */
+
 (function (window) {
 	'use strict';
 

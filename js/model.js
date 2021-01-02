@@ -1,3 +1,6 @@
+/**
+ * creates a new model instance and links it to storage
+ */
 (function (window) {
 	'use strict';
 

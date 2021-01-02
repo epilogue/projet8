@@ -1,4 +1,7 @@
 /*jshint laxbreak:true */
+/**
+ * defines the default HTML template.
+ */
 (function (window) {
 	'use strict';
 

@@ -1,4 +1,7 @@
-/*global app, $on */
+/**
+ * global app, $on
+ * 
+ *  */
 (function () {
 	'use strict';
 
@@ -16,7 +19,10 @@
 	}
 
 	var todo = new Todo('todos-vanillajs');
-
+        /**
+         * fonction setView 
+         * 
+         */
 	function setView() {
 		todo.controller.setView(document.location.hash);
 	}
