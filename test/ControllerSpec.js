@@ -316,7 +316,7 @@ describe('controller', function () {
 
                       subject.setView('');
 
-                      // Crée une nouvelle tache avec pour titre 'a new todo'
+                      // Crée une nouvelle tache avec pour titre 'une nouvelle tache'
                       view.trigger('newTodo', 'une nouvelle tache');
 
                       // Vérifie que cette tache a bien été traitée par le model

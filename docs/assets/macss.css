@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 janv. 2021, 19:43:02
+    Author     : epilogue
+*/
+
+#titledoc{
+    font-size: 44px;
+    color:#900;
+    text-align: center;
+    font-variant-caps: small-caps;
+}
+
+.titleTestApp{
+    font-size: 24px;
+    color:#900;
+    text-align: center;
+}
+a{
+    color:#900;
+}
+.descriTest{
+    font-weight: bold;
+    color: #888;
+}

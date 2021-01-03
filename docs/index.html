@@ -2,22 +2,25 @@
 <html lang="en">
     <head>
         <meta charset='utf-8'>
-        <title>  | Documentation</title>
+        <title>  | Documentation technique application todos</title>
         <meta name='viewport' content='width=device-width,initial-scale=1'>
         <link href='assets/bass.css' rel='stylesheet'>
         <link href='assets/style.css' rel='stylesheet'>
         <link href='assets/github.css' rel='stylesheet'>
         <link href='assets/split.css' rel='stylesheet'>
+        <link href='assets/macss.css' rel='stylesheet'>
     </head>
     <body class='documentation m0'>
-        <div class='flex'>
+       <div id="titledoc"> documentation technique de l'application Todos</div>
+        <div class='flex'> 
             <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
                 <div class='py1 px2'>
                     <h3 class='mb0 no-anchor'></h3>
                     <div class='mb1'><code></code></div>
                     <input placeholder='Filter' id='filter-input' class='col12 block input'
                         spellcheck='false' autocapitalize='off' autocorrect='off' type='text' />
-                    <div id='toc'>
+                   
+                    <div id='toc' ><p class="titleTestApp">Fichiers de l'application </p>
                         <ul class='list-reset h5 py1-ul'>
                             <!--li App-->
                             <li>
@@ -34,103 +37,55 @@
                                 </div>
                             </li>
                             <!--li App fin-->
-
-
                             <li>
-                                <a
-                                    href='#controller'
-                                    class=" toggle-sibling">
+                                <a href='#controller' class=" toggle-sibling">
                                     Controller
                                     <span class='icon'>▸</span>
                                 </a>
-
                                 <div class='toggle-target display-none'>
-
-
                                     <ul class='list-reset py1-ul pl1'>
                                         <li class='h5'><span>Instance members</span></li>
-
-                                        <li><a
-                                                href='#controllersetview'
-                                                class='regular pre-open'>
+                                        <li><a href='#controllersetview' class='regular pre-open'>
                                                 #setView
                                             </a></li>
-
-                                        <li><a
-                                                href='#controllershowall'
-                                                class='regular pre-open'>
+                                        <li><a href='#controllershowall' class='regular pre-open'>
                                                 #showAll
                                             </a></li>
-
-                                        <li><a
-                                                href='#controllershowactive'
-                                                class='regular pre-open'>
+                                        <li><a href='#controllershowactive' class='regular pre-open'>
                                                 #showActive
                                             </a></li>
-
-                                        <li><a
-                                                href='#controllershowcompleted'
-                                                class='regular pre-open'>
+                                        <li><a href='#controllershowcompleted' class='regular pre-open'>
                                                 #showCompleted
                                             </a></li>
-
-                                        <li><a
-                                                href='#controlleradditem'
-                                                class='regular pre-open'>
+                                        <li><a href='#controlleradditem' class='regular pre-open'>
                                                 #addItem
                                             </a></li>
 
-                                        <li><a
-                                                href='#controllerremoveitem'
-                                                class='regular pre-open'>
+                                        <li><a href='#controllerremoveitem' class='regular pre-open'>
                                                 #removeItem
                                             </a></li>
-
-                                        <li><a
-                                                href='#controllerremovecompleteditems'
-                                                class='regular pre-open'>
+                                        <li><a href='#controllerremovecompleteditems' class='regular pre-open'>
                                                 #removeCompletedItems
                                             </a></li>
-
-                                        <li><a
-                                                href='#controllertogglecomplete'
-                                                class='regular pre-open'>
+                                        <li><a href='#controllertogglecomplete' class='regular pre-open'>
                                                 #toggleComplete
                                             </a></li>
-
-                                        <li><a
-                                                href='#controllertoggleall'
-                                                class='regular pre-open'>
+                                        <li><a href='#controllertoggleall' class='regular pre-open'>
                                                 #toggleAll
                                             </a></li>
-
-                                        <li><a
-                                                href='#controller_updatecount'
-                                                class='regular pre-open'>
+                                        <li><a href='#controller_updatecount' class='regular pre-open'>
                                                 #_updateCount
                                             </a></li>
-
-                                        <li><a
-                                                href='#controller_filter'
-                                                class='regular pre-open'>
+                                        <li><a href='#controller_filter' class='regular pre-open'>
                                                 #_filter
                                             </a></li>
-
-                                        <li><a
-                                                href='#controller_updatefilterstate'
-                                                class='regular pre-open'>
+                                        <li><a href='#controller_updatefilterstate' class='regular pre-open'>
                                                 #_updateFilterState
                                             </a></li>
-
                                     </ul>
-
-
-
                                 </div>
 
                             </li>
-
-
                             <li>
                                 <a
                                     href='#helpers'
@@ -176,8 +131,6 @@
                                 </div>
 
                             </li>
-
-
                             <li>
                                 <a
                                     href='#model'
@@ -235,8 +188,6 @@
                                 </div>
 
                             </li>
-
-
                             <li>
                                 <a
                                     href='#store'
@@ -288,8 +239,6 @@
                                 </div>
 
                             </li>
-
-
                             <li>
                                 <a
                                     href='#template'
@@ -329,7 +278,6 @@
                                 </div>
 
                             </li>
-
                             <li>
                                 <a
                                     href='#view'
@@ -417,7 +365,126 @@
                                 </div>
 
                             </li>
-
+                        </ul>
+                    </div>
+                    <div id="toc2">
+                        <p class="titleTestApp">Tests de l'application </p>
+                        <ul class='list-reset h5 py1-ul'>
+                            <li>
+                                <a href='#suiteController' class=" toggle-sibling">
+                                suite de test pour le controller <span class='icon'>▸</span>
+                                </a>
+                                <div class='toggle-target display-none'>
+                                    <ul class='list-reset py1-ul pl1'>
+                                        <li class='h5'><span>fonctions</span></li>
+                                        <li><a href='#sCSetUpModel' class='regular pre-open'>#SetUpModel</a></li>
+                                        <li><a href='#sCCreateViewStub' class='regular pre-open'>#createViewStub</a></li>
+                                        <li><a href='#sCBeforeEach' class='regular pre-open'>#beforeEach</a></li>
+                                        <li class='h5'><span>spécifications des tests</span></li>
+                                        <li><a href='#sCIt1' class='regular pre-open'>#should show entries on start-up</a></li>
+                                        <li><a href='#sCIt2' class='regular pre-open'>#should show the content block when todos exists</a></li>
+                                        <li><a href='#sCIt3' class='regular pre-open'>#should hide the content block when no todos exists</a></li>
+                                        <li><a href='#sCIt4' class='regular pre-open'>#should check the toggle all button, if all todos are completed</a></li>
+                                        <li><a href='#sCIt5' class='regular pre-open'>#should set the "clear completed" button</a></li>
+                                        <li><a href='#sCIt6' class='regular pre-open'>#should highlight "All" filter by default</a></li>
+                                        <li><a href='#sCIt7' class='regular pre-open'>#should highlight "Active" filter when switching to active view</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href='#suiteRoute' class=" toggle-sibling">
+                                suite de test pour routes <span class='icon'>▸</span>
+                                </a>
+                                <div class='toggle-target display-none'>
+                                    <ul class='list-reset py1-ul pl1'>
+                                        <li class='h5'><span>spécifications de tests</span></li>
+                                         <li><a href='#sRIt1' class='regular pre-open'>#should show all entries without a route</a></li>
+                                         <li><a href='#sRIt2' class='regular pre-open'>#should show all entries without "all" route</a></li>
+                                         <li><a href='#sRIt3' class='regular pre-open'>#should show active entries</a></li>
+                                         <li><a href='#sRIt4' class='regular pre-open'>#should show completed entries</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href='#suiteToggleAll' class=" toggle-sibling">
+                                suite de test pour toggle all <span class='icon'>▸</span>
+                                </a>
+                                <div class='toggle-target display-none'>
+                                    <ul class='list-reset py1-ul pl1'>
+                                        <li class='h5'><span>spécifications de tests</span></li>
+                                         <li><a href='#sTaIt1' class='regular pre-open'>#should toggle all todos to completed</a></li>
+                                         <li><a href='#sTaIt2' class='regular pre-open'>#should update the view</a></li>
+                                         <li><a href='#sTaIt3' class='regular pre-open'>#should toggle all todos to active</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href='#suiteNewTodo' class=" toggle-sibling">
+                                suite de test pour new todo <span class='icon'>▸</span>
+                                </a>
+                                <div class='toggle-target display-none'>
+                                    <ul class='list-reset py1-ul pl1'>
+                                        <li class='h5'><span>spécifications de tests</span></li>
+                                         <li><a href='#sNtIt1' class='regular pre-open'>#should add a new todo to the model</a></li>
+                                         <li><a href='#sNtIt2' class='regular pre-open'>#should add a new todo to the view</a></li>
+                                         <li><a href='#sNtIt3' class='regular pre-open'>#should clear the input field when a new todo is added</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href='#suiteEltRemoval' class=" toggle-sibling">
+                                suite de test pour element removal <span class='icon'>▸</span>
+                                </a>
+                                <div class='toggle-target display-none'>
+                                    <ul class='list-reset py1-ul pl1'>
+                                        <li class='h5'><span>spécifications de tests</span></li>
+                                         <li><a href='#sErIt1' class='regular pre-open'>#should remove an entry from the model</a></li>
+                                         <li><a href='#sErIt2' class='regular pre-open'>#should remove an entry from the view</a></li>
+                                         <li><a href='#sErIt3' class='regular pre-open'>#should update the element count</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href='#suiteRemoveCompleted' class=" toggle-sibling">
+                                suite de test pour remove completed <span class='icon'>▸</span>
+                                </a>
+                                <div class='toggle-target display-none'>
+                                    <ul class='list-reset py1-ul pl1'>
+                                        <li class='h5'><span>spécifications de tests</span></li>
+                                         <li><a href='#sRcIt1' class='regular pre-open'>#should remove a completed entry from the model</a></li>
+                                         <li><a href='#sRcIt2' class='regular pre-open'>#should remove a completed entry from the view</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href='#suiteEltCompleteToggle' class=" toggle-sibling">
+                                suite de test pour element complete toggle  <span class='icon'>▸</span>
+                                </a>
+                                <div class='toggle-target display-none'>
+                                    <ul class='list-reset py1-ul pl1'>
+                                        <li class='h5'><span>spécifications de tests</span></li>
+                                        <li><a href='#sEctIt1' class='regular pre-open'>#should update the model</a></li>
+                                        <li><a href='#sEctIt2' class='regular pre-open'>#should update the view</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href='#suiteEditItem' class=" toggle-sibling">
+                                suite de test pour edit item  <span class='icon'>▸</span>
+                                </a>
+                                <div class='toggle-target display-none'>
+                                    <ul class='list-reset py1-ul pl1'>
+                                        <li class='h5'><span>spécifications de tests</span></li>
+                                        <li><a href='#sEiIt1' class='regular pre-open'>#should switch to edit mode</a></li>
+                                        <li><a href='#sEiIt2' class='regular pre-open'>#should leave edit mode on done</a></li>
+                                        <li><a href='#sEiIt3' class='regular pre-open'>#should persist the changes on done</a></li>
+                                        <li><a href='#sEiIt4' class='regular pre-open'>#should remove the element from the model when persisting an empty title</a></li>
+                                        <li><a href='#sEiIt5' class='regular pre-open'>#should remove the element from the view when persisting an empty title</a></li>
+                                        <li><a href='#sEiIt6' class='regular pre-open'>#should leave edit mode on cancel</a></li>
+                                        <li><a href='#sEiIt7' class='regular pre-open'>#should not persist the changes on cancel</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class='mt1 h6 quiet'>
@@ -480,45 +547,14 @@
                 <!--section app fin-->
                 
                 <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
                     <div class='clearfix'>
-
                         <h3 class='fl m0' id='controller'>
                             Controller
                         </h3>
-
-
                     </div>
-
-
                     <p>Controller</p>
 
                     <div class='pre p1 fill-light mt0'>Controller</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                     <div class='py1 quiet mt1 prose-big'>Instance Members</div>
                     <div class="clearfix">
@@ -538,16 +574,6 @@
                                     <p>Loads and initialises the view</p>
 
                                     <div class='pre p1 fill-light mt0'>setView(locationHash: any, null: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
-
-
-
-
-
-
-
-
-
-
 
                                     <div class='py1 quiet mt1 prose-big'>Parameters</div>
                                     <div class='prose'>
@@ -571,24 +597,6 @@
 
                                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
 
                             </div>
@@ -603,42 +611,10 @@
                             </div>
                             <div class="clearfix display-none toggle-target">
                                 <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-
                                     <p>An event to fire on load. Will get all items and display them in the
                                         todo-list</p>
 
                                     <div class='pre p1 fill-light mt0'>showAll()</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
 
                             </div>
@@ -653,41 +629,9 @@
                             </div>
                             <div class="clearfix display-none toggle-target">
                                 <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-
                                     <p>Renders all active tasks</p>
 
                                     <div class='pre p1 fill-light mt0'>showActive()</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
 
                             </div>
@@ -702,43 +646,10 @@
                             </div>
                             <div class="clearfix display-none toggle-target">
                                 <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-
                                     <p>Renders all completed tasks</p>
 
                                     <div class='pre p1 fill-light mt0'>showCompleted()</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
-
                             </div>
                         </div>
 
@@ -758,17 +669,6 @@
                                         object and it'll handle the DOM insertion and saving of the new item.</p>
 
                                     <div class='pre p1 fill-light mt0'>addItem(title: any)</div>
-
-
-
-
-
-
-
-
-
-
-
                                     <div class='py1 quiet mt1 prose-big'>Parameters</div>
                                     <div class='prose'>
 
@@ -781,25 +681,6 @@
                                         </div>
 
                                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
 
                             </div>
@@ -814,24 +695,10 @@
                             </div>
                             <div class="clearfix display-none toggle-target">
                                 <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-
                                     <p>By giving it an ID it'll find the DOM element matching that ID,
                                         remove it from the DOM and also remove it from storage.</p>
 
                                     <div class='pre p1 fill-light mt0'>removeItem(id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
-
-
-
-
-
-
-
-
-
-
-
                                     <div class='py1 quiet mt1 prose-big'>Parameters</div>
                                     <div class='prose'>
 
@@ -846,25 +713,6 @@
                                         </div>
 
                                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
 
                             </div>
@@ -885,35 +733,6 @@
                                     <p>Will remove all completed items from the DOM and storage.</p>
 
                                     <div class='pre p1 fill-light mt0'>removeCompletedItems()</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
 
                             </div>
@@ -928,23 +747,10 @@
                             </div>
                             <div class="clearfix display-none toggle-target">
                                 <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
-
                                     <p>Give it an ID of a model and a checkbox and it will update the item
                                         in storage based on the checkbox's state.</p>
 
                                     <div class='pre p1 fill-light mt0'>toggleComplete(id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, completed: any, silent: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>), checkbox: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</div>
-
-
-
-
-
-
-
-
-
-
 
                                     <div class='py1 quiet mt1 prose-big'>Parameters</div>
                                     <div class='prose'>
@@ -987,24 +793,6 @@
 
                                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
 
                             </div>
@@ -1027,16 +815,6 @@
 
                                     <div class='pre p1 fill-light mt0'>toggleAll(completed: any)</div>
 
-
-
-
-
-
-
-
-
-
-
                                     <div class='py1 quiet mt1 prose-big'>Parameters</div>
                                     <div class='prose'>
 
@@ -1049,24 +827,6 @@
                                         </div>
 
                                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                 </section>
 
@@ -1082,8 +842,6 @@
                             </div>
                             <div class="clearfix display-none toggle-target">
                                 <section class='p2 mb2 clearfix bg-white minishadow'>
-
-
 
                                     <p>Updates the pieces of the page which change depending on the remaining
                                         number of todos.</p>
@@ -1105,8 +863,6 @@
                             <div class="clearfix display-none toggle-target">
                                 <section class='p2 mb2 clearfix bg-white minishadow'>
 
-
-
                                     <p>Re-filters the todo items, based on the active route.</p>
 
                                     <div class='pre p1 fill-light mt0'>_filter(force: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a>))</div>
@@ -1125,24 +881,6 @@
 
                                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
 
                             </div>
@@ -1158,21 +896,9 @@
                             <div class="clearfix display-none toggle-target">
                                 <section class='p2 mb2 clearfix bg-white minishadow'>
 
-
-
                                     <p>Simply updates the filter nav's selected states</p>
 
                                     <div class='pre p1 fill-light mt0'>_updateFilterState(currentPage: any)</div>
-
-
-
-
-
-
-
-
-
-
 
                                     <div class='py1 quiet mt1 prose-big'>Parameters</div>
                                     <div class='prose'>
@@ -1187,35 +913,12 @@
 
                                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 </section>
 
                             </div>
                         </div>
 
                     </div>
-
-
-
-
-
 
                 </section>
 
@@ -1228,36 +931,12 @@
                             helpers
                         </h3>
 
-
                     </div>
-
 
                     <p>global NodeList
                         this file was created to facilitate the work of the developer</p>
 
                     <div class='pre p1 fill-light mt0'>helpers</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                     <div class='py1 quiet mt1 prose-big'>Static Members</div>
                     <div class="clearfix">
@@ -1277,18 +956,7 @@
                                     <p>Get element(s) by CSS selector:</p>
 
                                     <div class='pre p1 fill-light mt0'>qs(selector: type, scope: type)</div>
-
-
-
-
-
-
-
-
-
-
-
-                                    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+                                 <div class='py1 quiet mt1 prose-big'>Parameters</div>
                                     <div class='prose'>
 
                                         <div class='space-bottom0'>
@@ -3612,9 +3280,746 @@ model.read({ <span class="hljs-attr">foo</span>: <span class="hljs-string">'bar'
 
 
                 </section>
-
-
-
+                <section class='p2 mb2 clearfix bg-white minishadow'>
+                    <div class='clearfix'>
+                        <h3 class='fl m0' id='suiteController'>
+                            Suite de test pour le controller
+                        </h3>
+                    </div>
+                    <p>Fichier ControllerSpec qui va permettre de créer les tests pour le fichier  controller.js 
+                        <br> Utilisation du framework de test open source jasmine en version 2.99.0</p>
+                    <div class='py1 quiet mt1 prose-big'>Fonctions</div>
+                    <div class="clearfix">
+                        <div class='border-bottom' id='sCSetUpModel'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>setUpModel(todos)</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                <section class='p2 mb2 clearfix bg-white minishadow'>
+                                    <p>appelle des simulations des différentes fonctions présentes dans le fichier controller.js</p>
+                                    <div class='pre p1 fill-light mt0'>
+                                        setUpModel(todo: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Type">type</a>)
+                                    </div>
+                                    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+                                    <div class='prose'>
+                                        <div class='space-bottom0'>
+                                            <div>
+                                                <span class='code bold'>todos</span> <code class='quiet'>(type)</code>
+                                                a todo
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='py1 quiet mt1 prose-big'>appels des fonctions</div>
+                                    <div class='prose'>
+                                        <div class='space-bottom0'>
+                                            <div>
+                                                <span class='code bold'>model.read.and.callFake(function (query, callback))</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='prose'>
+                                        <div class='space-bottom0'>
+                                            <div>
+                                                <span class='code bold'>model.getCount.and.callFake(function (callback))</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='prose'>
+                                        <div class='space-bottom0'>
+                                            <div>
+                                                <span class='code bold'>model.remove.and.callFake(function (id, callback))</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='prose'>
+                                        <div class='space-bottom0'>
+                                            <div>
+                                                <span class='code bold'>model.create.and.callFake(function (title, callback))</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='prose'>
+                                        <div class='space-bottom0'>
+                                            <div>
+                                                <span class='code bold'>model.update.and.callFake(function (id, updateData, callback))</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sCCreateViewStub'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>createViewStub()</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p>Fonction qui crée des espions  sur les évènements.
+                                            <br>Utilisation de la fonction jasmine.createSpy()
+                                        </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sCBeforeEach'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>beforeEach()</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p>fonction qui est appelée une fois avant chaque describe dans laquelle elle est appelée.
+                                            <br> elle crée des espions  pour toutes les méthodes de la fonction model.
+                                             <br>Utilisation de la fonction jasmine.createSpyObj()
+                                        </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='py1 quiet mt1 prose-big'>Spécifications de test</div>
+                    <div class="clearfix">
+                        <div class='border-bottom' id='sCIt1'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should show entries on start-up</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>doit afficher les entrées au démarrage, c'est à dire à la premiere utilisation de todo.
+                                            <br>donc liste de todo vide vérification que la vue se charge bien même avec une liste vide
+                                            <br>test qui échoue : avec var todo = {title:'my todo'}, setUpModel([]) 
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction showEntries un tableau vide</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sCIt2'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should show the content block when todos exists</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            affiche le contenu lorsque des taches existent
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction contentBlockVisibility() le paramètre visible à true</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sCIt3'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should hide the content block when no todos exists</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            cache le contenu lorsqu'il n'y a pas de taches
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction contentBlockVisibility() le paramètre visible à false</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sCIt4'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should check the toggle all button, if all todos are completed</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            si toutes les todos sont terminées elles doivent être sélectionnées
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction toggleAll() le paramètre checked à true</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sCIt5'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should set the "clear completed" button</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            doit initialiser le bouton clear completed
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>
+                                            on passe à la fonction clearCompleteButton() les paramètres suivants : completed :1, visible à true
+                                        </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sCIt6'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should highlight "All" filter by default</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            teste si le bouton all est activé par défaut
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction setFilter() une string vide ''</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sCIt7'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should highlight "Active" filter when switching to active view</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            teste que le bouton active est bien activé lorsqu'on est sur la vue active 
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction setFilter() le paramètre active</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class='p2 mb2 clearfix bg-white minishadow'>
+                    <div class='clearfix'>
+                        <h3 class='fl m0' id='suiteRoute'>
+                            Suite de test pour routes
+                        </h3>
+                    </div>
+                    <p></p>
+                    <div class='py1 quiet mt1 prose-big'>Spécifications de test</div>
+                    <div class="clearfix">
+                        <div class='border-bottom' id='sRIt1'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should show all entries without a route</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>doit montrer toutes les entrées sans route 
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction showEntries le tableau des todos</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sRIt2'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should show all entries without "all" route</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            doit montrer toutes les entrées sans la route all ( "#/")
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction showEntries() le tableau des todos qui on comme route  "#/"</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sRIt3'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should show active entries</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>doit afficher toutes les taches actives 
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction showEntries() le tableau des todos avec le paramètre completed à false</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sRIt4'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should show completed entries</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>doit afficher toutes les taches terminées
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction showEntries() le tableau des todos avec le paramètre completed à true</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                         
+                    </div>
+                </section>
+                <section class='p2 mb2 clearfix bg-white minishadow'>
+                    <div class='clearfix'>
+                        <h3 class='fl m0' id='suiteToggleAll'>
+                            Suite de test pour toggle all
+                        </h3>
+                    </div>
+                    <p></p>
+                    <div class='py1 quiet mt1 prose-big'>Spécifications de test</div>
+                    <div class="clearfix">
+                        <div class='border-bottom' id='sTaIt1'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should toggle all todos to completed</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            doit mettre toutes les taches a completed
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>
+                                            on passe à la fonction model.read()le paramètre à completed à false
+                                            pour chaque todo simulée on passe à la fonction model.update() l'id de la todo  et le paramètre completed à true
+                                        </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sTaIt2'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should update the view</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                          test si la vue se met à jour quand on clique sur l'élément
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction elementComplete() l'id de l'élément et le paramètre completed à false</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sTaIt3'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should toggle all todos to active</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            passe tous les element comme étant active
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p> on passe à la fonction model.read()le paramètre à completed à true
+                                            pour chaque todo simulée on passe à la fonction model.update() l'id de la todo  et le paramètre completed à false</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class='p2 mb2 clearfix bg-white minishadow'>
+                    <div class='clearfix'>
+                        <h3 class='fl m0' id='suiteNewTodo'>
+                            Suite de test pour new todo
+                        </h3>
+                    </div>
+                    <p></p>
+                    <div class='py1 quiet mt1 prose-big'>Spécifications de test</div>
+                    <div class="clearfix">
+                        <div class='border-bottom' id='sNtIt1'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should add a new todo to the model</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p> ajoute une nouvelle tache au model
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction model.create() le titre de la nouvelle tache</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sNtIt2'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should add a new todo to the view</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>ajoute une nouvelle tache à la vue
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction showEntries la tache ( son titre et le paramètre completed à false)</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sNtIt3'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should clear the input field when a new todo is added</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>efface le contenu de l'input lorsque la nouvelle tache a été ajoutée
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on appelle la fonction clearNewTodo()</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class='p2 mb2 clearfix bg-white minishadow'>
+                    <div class='clearfix'>
+                        <h3 class='fl m0' id='suiteEltRemoval'>
+                            Suite de test pour element removal
+                        </h3>
+                    </div>
+                    <p></p>
+                    <div class='py1 quiet mt1 prose-big'>Spécifications de test</div>
+                    <div class="clearfix">
+                        <div class='border-bottom' id='sErIt1'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should remove an entry from the model</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>supprimer une entrée à partir du model
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction model.remove() l'id de l'entrée</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sErIt2'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should remove an entry from the view</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>supprimer une entrée à partir de la vue
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la méthode removeItem  l'id  de l'entrée</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sErIt3'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should update the element count</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>mettre à jour le compteur d'élément
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction updateElementCount le chiffre 0</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class='p2 mb2 clearfix bg-white minishadow'>
+                    <div class='clearfix'>
+                        <h3 class='fl m0' id='suiteRemoveCompleted'>
+                            Suite de test pour remove completed
+                        </h3>
+                    </div>
+                    <p></p>
+                    <div class='py1 quiet mt1 prose-big'>Spécifications de test</div>
+                    <div class="clearfix">
+                        <div class='border-bottom' id='sRcIt1'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should remove a completed entry from the model</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            supprime une entrée finie (completed) à partir du model
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction model.read() le paramètre completed à true
+                                        on passe à la fonction model.remove() l'id de l'entrée</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sRcIt2'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should remove a completed entry from the view</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>supprime une entrée finie (completed) de la vue
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction removeItem() l'id de l'entrée</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+               <section class='p2 mb2 clearfix bg-white minishadow'>
+                    <div class='clearfix'>
+                        <h3 class='fl m0' id='suiteEltCompleteToggle'>
+                            Suite de test pour element complete toggle
+                        </h3>
+                    </div>
+                    <p></p>
+                    <div class='py1 quiet mt1 prose-big'>Spécifications de test</div>
+                    <div class="clearfix">
+                        <div class='border-bottom' id='sEctIt1'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should update the model</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>met à jour le model
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction model.update() l'id de l'élément et le paramètre completed à true</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sEctIt2'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should update the view</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>met à jour la vue
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction elementComplete() l'id de l'élément et le paramètre completed à false</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+               <section class='p2 mb2 clearfix bg-white minishadow'>
+                    <div class='clearfix'>
+                        <h3 class='fl m0' id='suiteEditItem'>
+                            Suite de test pour edit item
+                        </h3>
+                    </div>
+                    <p></p>
+                    <div class='py1 quiet mt1 prose-big'>Spécifications de test</div>
+                    <div class="clearfix">
+                        <div class='border-bottom' id='sEiIt1'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should switch to edit mode</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            passer en mode edition
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction editItem() l'id et le titre de l'élément</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sEiIt2'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should leave edit mode on done</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>quitter le mode édition quand c'est fait
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction editItemDone() l'id et le titre de l'élément</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sEiIt3'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should persist the changes on done</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>enregistrer les changements quand c'est fait
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction model.update() l'id et le nouveau titre de l'élément</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sEiIt4'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should remove the element from the model when persisting an empty title</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            doit supprimer l'élément du model  quand l'enregistrement à un titre vide
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction model.remove() l'id  de l'élément </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sEiIt5'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should remove the element from the view when persisting an empty title</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            doit supprimer l'élément de la vue  quand l'enregistrement à un titre vide
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction removeItem() l'id de l'élément</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sEiIt6'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should leave edit mode on cancel</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            quitte le mode édition quand on abandonne
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on passe à la fonction editItemDone() l'id et le titre de l'élément</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='border-bottom' id='sEiIt7'>
+                            <div class="clearfix small pointer toggle-sibling">
+                                <div class="py1 contain">
+                                    <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+                                    <span class='code strong strong truncate'>should not persist the changes on cancel</span>
+                                </div>
+                                <div class="clearfix display-none toggle-target">
+                                    <section class='p2 mb2 clearfix bg-white minishadow'>
+                                        <p class='descriTest'>Description du test</p>
+                                        <p>
+                                            ne doit pas enregistrer les changement quand on abandonne
+                                        </p>
+                                        <p class='descriTest'>Valeur attendue</p>
+                                        <p>on appelle la fonction model.update.not</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
         <script src='assets/anchor.js'></script>
