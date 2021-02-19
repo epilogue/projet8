@@ -1,5 +1,4 @@
-projet 8 parcours dev frontEnd openclassrooms
-vous pouvez aller voir le travail effectué ici : projet8.hubymagalie.loamok.org
+
 
 Dans le monde professionnel, on est souvent amené à reprendre un projet existant. Que faire quand vous vous retrouvez avec le code de quelqu'un d'autre ? Comment l'améliorer ? Voilà un savoir-faire qui vous sera très utile au quotidien !
 
